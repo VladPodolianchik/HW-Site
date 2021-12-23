@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+    font-size: 18px;
+    line-height: 20px;
+    background: url(../images/tesla_factory.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-bottom: 40px;
+    line-height: 42px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.align-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.align-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.header,
+.main,
+.footer {
+    padding: 30px;
+}
+
+.header {
+    background-color: #D5921A;
+    background-image: url(../images/tesla_logo.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+
+
+.header .logo img {
+    width: 80px;
+}
+
+.header .logo,
+.header .contacts {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .contacts {
+    /* margin-left: 40px; */
+    float: right;
+
+    text-align: right;
+}
+
+.header .contacts h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.header .contacts p {
+    margin-bottom: 0px;
+}
+
+.header .contacts a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .contacts a:hover {
+    color: white;
+}
+
+.header .contacts p span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    background-color: #443020;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    display: inline-block;
+    /* margin-right: 20px; */;
+}
+
+.navigation a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 30px;
+}
+
+.navigation a:hover {
+    background-color: #D5921A;
+    color: #443020;
+}
+
+.main {
+   position: relative;
+}
+
+.main::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.main p {
+    color: white;
+}
+
+.main .contact_form .field {
+    margin-bottom: 20px;
+}
+
+.main .contact_form input {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.main .contact_form .button {
+    border: 0;
+    background-color: green;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer span {
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .container span {
+    margin-right: 30px;
+}
+
+.footer .container a {
+    display: inline-block;
+    margin-left: 10px;
+    background-color: white;
+    height: 24px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page1 {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_page1 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+.page1 .header_page1 h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.header_page1 p {
+    font-family: 'Open Sans', sans-serif;
+    width: 540px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.price_list {
+    font-family: 'Arvo', serif;
+    background-color: white;
+    border-radius: 5px;
+
+    display: flex;
+
+    margin: 50px auto;
+    padding-top: 60px;
+
+    list-style: none;
+}
+
+.price_list h3 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+
+    color: #757575;
+}
+
+.price_list li {
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.price_list li:not(:last-child) {
+    border-right: 2px solid #E4E4E4;
+    height: 320px;
+}
+
+.price_list span {
+    font-size: 8px;
+    background-color: #8D76BE;
+    color: white;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 5px;
+    margin-right: 14px;
+}
+
+.main .page1 .price_list .price {
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.price::before {
+    content: '$';
+    font-size: 20px;
+    color: #818181;
+    vertical-align: 25px;
+}
+
+.price_list p {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: black;
+}
+
+.price_list .gb {
+    font-weight: normal;
+}
+
+.price_list button {
+    background-color: transparent;
+    border: 2px solid #9FA3A7;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #525252;
+    margin-top: 18px;
+    padding: 18px 28px;
+    border-radius: 28px;
+    letter-spacing: 2px;
+    cursor: pointer;
+} 
+
+.price_list li:hover .price {
+    color: #F05638;
+}
+
+.price_list li:hover button {
+    background-color: #FFC80A;
+    color: white;
+    border-color: transparent;
+}
+
+.main .gallery_list .avatars {
+    display: flex;
+}
+
+.main .gallery_list .avatars * {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main .gallery_list {
+    background-color: #ededed;
+    padding: 20px 20px 20px 24px;
+    display: inline-block;
+    width: 80%;
+    /* width: calc(25% - 20px - 4px); */
+    margin: 10px;
+}
+
+
+
+
+
+.gallery_list .avatar_1 *, .gallery_list .avatar_2 *,
+.gallery_list .avatar_3 *, .gallery_list .avatar_4 * {
+    background-size: contain;
+    background-repeat: no-repeat; 
+
+    position: absolute;
+}
+
+.gallery_list .avatars span, .gallery_list .avatars span,
+.gallery_list .avatars span, .gallery_list .avatars span {
+    margin-top: 10px;
+}
+
+.avatar_1 {
+    border: 2px solid red;
+    background-image: url(../images/elements/Rectangle-10.png);
+    width: 150px;
+    height: 200px;
+
+    margin-left: 10px;
+    
+    position: relative;
+}
+
+.avatar_1 .body {
+    background-image: url(../images/elements/body/yellow.png);
+    background-position: bottom center;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_1 .eyes {
+    background-image: url(../images/elements/eyes/default.png);
+    width: 44px;
+    height: 20px;
+
+    left: calc(50% - 22px);
+    top: 82px;
+}
+
+.avatar_1 .head {
+    background-image: url(../images/elements/head/hair/long/07.png);
+    background-position-y: 19px;
+    background-position-x: center;
+    background-size: 110% auto;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_1 .nose {
+    background-image: url(../images/elements/nose/rounded.png);
+    width: 30px;
+    height: 30px;
+
+    top: calc(50% - 12px);
+    left: calc(50% - 8px);
+}
+
+.avatar_1 .mouth {
+    background-image: url(../images/elements/mouth/kiss.png);
+    width: 50px;
+    height: 46px;
+
+    top: calc(50% + 12px);
+    left: calc(50% - 25px);
+}
+
+.avatar_1 .facial {
+    background-image: url(../images/elements/accessories/glasses-03.png);
+    width: 80px;
+    height: 80px;
+
+    top: calc(50% - 26px);
+    left: calc(50% - 40px);
+}
+
+.avatar_1 .clothing {
+    background-image: url(../images/elements/clothing/t-shirt\ crew\ neck.png);
+    width: 100%;
+    height: 66px;
+
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+.avatar_2 {
+    border: 2px solid red;
+    background-image: url(../images/elements/Rectangle-19.png);
+    width: 150px;
+    height: 200px;
+
+    margin-left: 10px;
+    
+    position: relative;
+}
+
+.avatar_2 .body {
+    background-image: url(../images/elements/body/dark-brown.png);
+    background-position: bottom center;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_2 .eyes {
+    background-image: url(../images/elements/eyes/angry.png);
+    width: 44px;
+    height: 20px;
+
+    left: calc(50% - 22px);
+    top: 82px;
+}
+
+.avatar_2 .head {
+    background-image: url(../images/elements/head/accessories/turban.png);
+    background-position-y: 19px;
+    background-position-x: center;
+    background-size: 110% auto;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_2 .nose {
+    background-image: url(../images/elements/nose/default.png);
+    width: 30px;
+    height: 30px;
+
+    top: calc(50% - 12px);
+    left: calc(50% - 8px);
+}
+
+.avatar_2 .mouth {
+    background-image: url(../images/elements/mouth/serious.png);
+    width: 50px;
+    height: 46px;
+
+    top: calc(50% + 12px);
+    left: calc(50% - 25px);
+}
+
+.avatar_2 .facial {
+    background-image: url(../images/elements/facial_hair/beard-long.png);
+    width: 80px;
+    height: 80px;
+
+    top: calc(50% + 4px);
+    left: calc(50% - 40px);
+}
+
+.avatar_2 .clothing {
+    background-image: url(../images/elements/clothing/t-shirt\ V\ neck.png);
+    width: 100%;
+    height: 66px;
+
+    bottom: 0;
+}
+
+
+
+
+
+
+.avatar_3 {
+    border: 2px solid red;
+    background-image: url(../images/elements/Rectangle-3.png);
+    width: 150px;
+    height: 200px;
+
+    margin-left: 10px;
+    
+    position: relative;
+}
+
+.avatar_3 .body {
+    background-image: url(../images/elements/body/pale.png);
+    background-position: bottom center;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_3 .eyes {
+    background-image: url(../images/elements/eyes/happy.png);
+    width: 44px;
+    height: 20px;
+
+    left: calc(50% - 22px);
+    top: 82px;
+}
+
+.avatar_3 .head {
+    background-image: url(../images/elements/head/hair/short/13.png);
+    background-position-y: 19px;
+    background-position-x: center;
+    background-size: 110% auto;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_3 .nose {
+    background-image: url(../images/elements/nose/pointy.png);
+    width: 30px;
+    height: 30px;
+
+    top: calc(50% - 12px);
+    left: calc(50% - 8px);
+}
+
+.avatar_3 .mouth {
+    background-image: url(../images/elements/mouth/smile.png);
+    width: 50px;
+    height: 46px;
+
+    top: calc(50% + 12px);
+    left: calc(50% - 24px);
+}
+
+.avatar_3 .facial {
+    background-image: url(../images/elements/accessories/glasses-01.png);
+    width: 80px;
+    height: 80px;
+
+    top: calc(50% - 26px);
+    left: calc(50% - 40px);
+}
+
+.avatar_3 .clothing {
+    background-image: url(../images/elements/clothing/turtleneck.png);
+    width: 100%;
+    height: 66px;
+
+    bottom: 0;
+}
+
+
+
+
+
+.avatar_4 {
+    border: 2px solid red;
+    background-image: url(../images/elements/Rectangle-1.png);
+    width: 150px;
+    height: 200px;
+
+    margin-left: 10px;
+    
+    position: relative;
+}
+
+.avatar_4 .body {
+    background-image: url(../images/elements/body/light.png);
+    background-position: bottom center;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_4 .eyes {
+    background-image: url(../images/elements/eyes/wink.png);
+    width: 44px;
+    height: 20px;
+
+    left: calc(50% - 22px);
+    top: 82px;
+}
+
+.avatar_4 .head {
+    background-image: url(../images/elements/head/hair/long/08.png);
+    background-position-y: 19px;
+    background-position-x: center;
+    background-size: 110% auto;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar_4 .nose {
+    background-image: url(../images/elements/nose/pointy.png);
+    width: 30px;
+    height: 30px;
+
+    top: calc(50% - 12px);
+    left: calc(50% - 8px);
+}
+
+.avatar_4 .mouth {
+    background-image: url(../images/elements/mouth/tonge.png);
+    width: 50px;
+    height: 46px;
+
+    top: calc(50% + 12px);
+    left: calc(50% - 24px);
+}
+
+.avatar_4 .clothing {
+    background-image: url(../images/elements/clothing/t-shirt.png);
+    width: 100%;
+    height: 66px;
+
+    bottom: 0;
+}
+
